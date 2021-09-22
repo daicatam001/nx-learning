@@ -27,6 +27,13 @@
     ]
   },
   "projects": {
+    "customer-portal": {
+      "tags": []
+    },
+    "customer-portal-e2e": {
+      "tags": [],
+      "implicitDependencies": ["customer-portal"]
+    },
     "starter-app": {
       "tags": []
     },
