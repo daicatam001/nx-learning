@@ -37,6 +37,9 @@
       "tags": [],
       "implicitDependencies": ["customer-portal"]
     },
+    "data-models": {
+      "tags": []
+    },
     "starter-app": {
       "tags": []
     },
