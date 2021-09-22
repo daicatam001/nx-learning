@@ -40,6 +40,9 @@
       "tags": [],
       "implicitDependencies": ["customer-portal"]
     },
+    "data": {
+      "tags": []
+    },
     "data-models": {
       "tags": []
     },
@@ -56,6 +59,9 @@
     "todos-e2e": {
       "tags": [],
       "implicitDependencies": ["todos"]
+    },
+    "ui": {
+      "tags": []
     }
   }
 }

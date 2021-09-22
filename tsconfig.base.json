@@ -16,7 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@nx-learning/auth": ["libs/auth/src/index.ts"],
-      "@nx-learning/data-models": ["libs/data-models/src/index.ts"]
+      "@nx-learning/data": ["libs/data/src/index.ts"],
+      "@nx-learning/data-models": ["libs/data-models/src/index.ts"],
+      "@nx-learning/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
