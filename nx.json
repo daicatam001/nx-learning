@@ -46,6 +46,13 @@
     "starter-app-e2e": {
       "tags": [],
       "implicitDependencies": ["starter-app"]
+    },
+    "todos": {
+      "tags": []
+    },
+    "todos-e2e": {
+      "tags": [],
+      "implicitDependencies": ["todos"]
     }
   }
 }
