@@ -1,6 +1,126 @@
 {
   "version": 1,
-  "projects": {},
+  "projects": {
+    "angular-spotify": {
+      "projectType": "application",
+      "root": "apps/angular-spotify",
+      "sourceRoot": "apps/angular-spotify/src",
+      "prefix": "nx-learning",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/angular-spotify",
+            "index": "apps/angular-spotify/src/index.html",
+            "main": "apps/angular-spotify/src/main.ts",
+            "polyfills": "apps/angular-spotify/src/polyfills.ts",
+            "tsConfig": "apps/angular-spotify/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "apps/angular-spotify/src/favicon.ico",
+              "apps/angular-spotify/src/assets"
+            ],
+            "styles": ["apps/angular-spotify/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "apps/angular-spotify/src/environments/environment.ts",
+                  "with": "apps/angular-spotify/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "angular-spotify:build:production"
+            },
+            "development": {
+              "browserTarget": "angular-spotify:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "angular-spotify:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/angular-spotify/src/**/*.ts",
+              "apps/angular-spotify/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/angular-spotify"],
+          "options": {
+            "jestConfig": "apps/angular-spotify/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "angular-spotify-e2e": {
+      "root": "apps/angular-spotify-e2e",
+      "sourceRoot": "apps/angular-spotify-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/angular-spotify-e2e/cypress.json",
+            "devServerTarget": "angular-spotify:serve:development"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "angular-spotify:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/angular-spotify-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    }
+  },
   "cli": {
     "defaultCollection": "@nrwl/angular",
     "packageManager": "npm"
@@ -31,5 +151,6 @@
     "@nrwl/angular:component": {
       "style": "scss"
     }
-  }
+  },
+  "defaultProject": "angular-spotify"
 }

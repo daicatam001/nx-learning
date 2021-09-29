@@ -26,5 +26,13 @@
       }
     ]
   },
-  "projects": {}
+  "projects": {
+    "angular-spotify": {
+      "tags": []
+    },
+    "angular-spotify-e2e": {
+      "tags": [],
+      "implicitDependencies": ["angular-spotify"]
+    }
+  }
 }
