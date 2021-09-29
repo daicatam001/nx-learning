@@ -26,42 +26,5 @@
       }
     ]
   },
-  "projects": {
-    "api": {
-      "tags": []
-    },
-    "auth": {
-      "tags": []
-    },
-    "customer-portal": {
-      "tags": []
-    },
-    "customer-portal-e2e": {
-      "tags": [],
-      "implicitDependencies": ["customer-portal"]
-    },
-    "data": {
-      "tags": []
-    },
-    "data-models": {
-      "tags": []
-    },
-    "starter-app": {
-      "tags": []
-    },
-    "starter-app-e2e": {
-      "tags": [],
-      "implicitDependencies": ["starter-app"]
-    },
-    "todos": {
-      "tags": []
-    },
-    "todos-e2e": {
-      "tags": [],
-      "implicitDependencies": ["todos"]
-    },
-    "ui": {
-      "tags": []
-    }
-  }
+  "projects": {}
 }
