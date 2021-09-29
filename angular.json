@@ -5,7 +5,7 @@
       "projectType": "application",
       "root": "apps/angular-spotify",
       "sourceRoot": "apps/angular-spotify/src",
-      "prefix": "nx-learning",
+      "prefix": "ta",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -17,10 +17,7 @@
             "polyfills": "apps/angular-spotify/src/polyfills.ts",
             "tsConfig": "apps/angular-spotify/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "apps/angular-spotify/src/favicon.ico",
-              "apps/angular-spotify/src/assets"
-            ],
+            "assets": ["apps/angular-spotify/src/favicon.ico", "apps/angular-spotify/src/assets"],
             "styles": ["apps/angular-spotify/src/styles.scss"],
             "scripts": []
           },
@@ -116,6 +113,50 @@
           "outputs": ["{options.outputFile}"],
           "options": {
             "lintFilePatterns": ["apps/angular-spotify-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "web-layout": {
+      "projectType": "library",
+      "root": "libs/web/layout",
+      "sourceRoot": "libs/web/layout/src",
+      "prefix": "nx-learning",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/layout"],
+          "options": {
+            "jestConfig": "libs/web/layout/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/web/layout/src/**/*.ts", "libs/web/layout/src/**/*.html"]
+          }
+        }
+      }
+    },
+    "web-shell": {
+      "root": "libs/web/shell",
+      "sourceRoot": "libs/web/shell/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/web/shell/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/shell"],
+          "options": {
+            "jestConfig": "libs/web/shell/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }

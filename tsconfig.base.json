@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-learning/web/layout": ["libs/web/layout/src/index.ts"],
+      "@nx-learning/web/shell": ["libs/web/shell/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

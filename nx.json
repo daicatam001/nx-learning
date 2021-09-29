@@ -33,6 +33,12 @@
     "angular-spotify-e2e": {
       "tags": [],
       "implicitDependencies": ["angular-spotify"]
+    },
+    "web-layout": {
+      "tags": []
+    },
+    "web-shell": {
+      "tags": []
     }
   }
 }
