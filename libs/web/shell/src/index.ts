@@ -1,1 +1,1 @@
-export * from './lib/web-shell';
+export * from './lib/web-shell.module';
