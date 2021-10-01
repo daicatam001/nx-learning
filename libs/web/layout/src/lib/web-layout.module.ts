@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LeftNavComponent } from './left-nav/left-nav.component';
 import { LayoutComponent } from './layout/layout.component';
+import {WebSharedUiNavBarModule} from '@nx-learning/web/shared/ui/nav-bar';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule,WebSharedUiNavBarModule],
   declarations: [
-    LeftNavComponent,
     LayoutComponent
   ]
 })

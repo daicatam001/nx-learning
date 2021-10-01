@@ -37,6 +37,9 @@
     "web-layout": {
       "tags": []
     },
+    "web-shared-ui-nav-bar": {
+      "tags": []
+    },
     "web-shell": {
       "tags": []
     }
