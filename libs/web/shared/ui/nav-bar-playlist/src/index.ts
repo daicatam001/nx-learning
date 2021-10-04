@@ -1,1 +1,1 @@
-export * from './lib/web-shared-ui-nav-bar-playlist.module';
+export * from './lib/nav-bar-playlist.module';

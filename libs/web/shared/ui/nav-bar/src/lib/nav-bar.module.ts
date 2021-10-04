@@ -2,9 +2,10 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {NavBarComponent} from './nav-bar/nav-bar.component';
 import {RouterModule} from '@angular/router';
+import {NavBarPlaylistModule} from '@nx-learning/web/shared/ui/nav-bar-playlist';
 
 @NgModule({
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, NavBarPlaylistModule],
   declarations: [
     NavBarComponent
   ],
