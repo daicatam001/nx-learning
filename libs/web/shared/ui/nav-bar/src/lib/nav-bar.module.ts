@@ -12,5 +12,5 @@ import {RouterModule} from '@angular/router';
     NavBarComponent
   ]
 })
-export class WebSharedUiNavBarModule {
+export class NavBarModule {
 }

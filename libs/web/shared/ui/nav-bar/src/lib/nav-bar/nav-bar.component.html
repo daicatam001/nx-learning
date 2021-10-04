@@ -5,7 +5,7 @@
 
 <ul class="nav-bar-top">
   <li *ngFor="let item of navItems$ | async" class="px-2 nav-link-container">
-    <a [routerLink]="item.path" class="flex px-4 nav-link link-subtle">
+    <a [routerLink]="item.path" routerLinkActive="active" class="flex px-4 nav-link link-subtle">
       {{ item.label }}
     </a>
   </li>
