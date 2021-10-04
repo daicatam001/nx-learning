@@ -16,6 +16,12 @@
     "baseUrl": ".",
     "paths": {
       "@nx-learning/web/layout": ["libs/web/layout/src/index.ts"],
+      "@nx-learning/web/shared/data-access/models": [
+        "libs/web/shared/data-access/models/src/index.ts"
+      ],
+      "@nx-learning/web/shared/data-access/ui-store": [
+        "libs/web/shared/data-access/ui-store/src/index.ts"
+      ],
       "@nx-learning/web/shared/ui/nav-bar": ["libs/web/shared/ui/nav-bar/src/index.ts"],
       "@nx-learning/web/shell": ["libs/web/shell/src/index.ts"]
     }
