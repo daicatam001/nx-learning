@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-learning/web/auth/data-access/services": [
+        "libs/web/auth/data-access/services/src/index.ts"
+      ],
       "@nx-learning/web/layout": ["libs/web/layout/src/index.ts"],
       "@nx-learning/web/shared/data-access/models": [
         "libs/web/shared/data-access/models/src/index.ts"

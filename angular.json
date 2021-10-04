@@ -117,6 +117,28 @@
         }
       }
     },
+    "web-auth-data-access-services": {
+      "root": "libs/web/auth/data-access/services",
+      "sourceRoot": "libs/web/auth/data-access/services/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/web/auth/data-access/services/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/auth/data-access/services"],
+          "options": {
+            "jestConfig": "libs/web/auth/data-access/services/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "web-layout": {
       "projectType": "library",
       "root": "libs/web/layout",

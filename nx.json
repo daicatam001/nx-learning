@@ -34,6 +34,9 @@
       "tags": [],
       "implicitDependencies": ["angular-spotify"]
     },
+    "web-auth-data-access-services": {
+      "tags": []
+    },
     "web-layout": {
       "tags": []
     },
