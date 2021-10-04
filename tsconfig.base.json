@@ -23,6 +23,9 @@
         "libs/web/shared/data-access/ui-store/src/index.ts"
       ],
       "@nx-learning/web/shared/ui/nav-bar": ["libs/web/shared/ui/nav-bar/src/index.ts"],
+      "@nx-learning/web/shared/ui/nav-bar-playlist": [
+        "libs/web/shared/ui/nav-bar-playlist/src/index.ts"
+      ],
       "@nx-learning/web/shell": ["libs/web/shell/src/index.ts"]
     }
   },
