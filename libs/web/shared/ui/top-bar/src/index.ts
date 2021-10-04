@@ -1,1 +1,1 @@
-export * from './lib/web-shared-ui-top-bar.module';
+export * from './lib/top-bar.module';
