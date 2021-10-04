@@ -17,6 +17,9 @@ module.exports = {
         width: {
           navBar: '232px',
           topBar: '60px'
+        },
+        height: {
+          topBar: '60px'
         }
       },
     },

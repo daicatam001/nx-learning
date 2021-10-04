@@ -43,6 +43,9 @@
     "web-shared-data-access-ui-store": {
       "tags": []
     },
+    "web-shared-ui-main-view": {
+      "tags": []
+    },
     "web-shared-ui-nav-bar": {
       "tags": []
     },
