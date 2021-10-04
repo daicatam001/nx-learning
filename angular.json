@@ -233,6 +233,31 @@
         }
       }
     },
+    "web-shared-ui-top-bar": {
+      "projectType": "library",
+      "root": "libs/web/shared/ui/top-bar",
+      "sourceRoot": "libs/web/shared/ui/top-bar/src",
+      "prefix": "nx-learning",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/shared/ui/top-bar"],
+          "options": {
+            "jestConfig": "libs/web/shared/ui/top-bar/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/shared/ui/top-bar/src/**/*.ts",
+              "libs/web/shared/ui/top-bar/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
     "web-shell": {
       "projectType": "library",
       "root": "libs/web/shell",

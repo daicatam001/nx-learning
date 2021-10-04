@@ -49,6 +49,9 @@
     "web-shared-ui-nav-bar-playlist": {
       "tags": []
     },
+    "web-shared-ui-top-bar": {
+      "tags": []
+    },
     "web-shell": {
       "tags": []
     }

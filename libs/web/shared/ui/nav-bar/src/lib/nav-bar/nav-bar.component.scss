@@ -1,7 +1,7 @@
 :host {
   grid-area: nav-bar;
   z-index: 3;
-  @apply w-leftNav pt-6 bg-black;
+  @apply w-navBar pt-6 bg-black;
 }
 
 .nav-link-container {

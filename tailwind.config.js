@@ -13,7 +13,12 @@ module.exports = {
     },
     darkMode: 'class', // or 'media' or 'class'
     theme: {
-      extend: {},
+      extend: {
+        width: {
+          navBar: '232px',
+          topBar: '60px'
+        }
+      },
     },
     variants: {
       extend: {},
